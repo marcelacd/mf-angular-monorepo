@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="home" routerLink="/">
+    <span class="material-icons"> home </span>
+  </div>
+  <div class="cart" routerLink="/payment">
+    <span class="material-icons"> shopping_cart </span>
+    <span class="cart__count">
+      {{ commonsLibService.channelPayment$ | async }}
+    </span>
+  </div>
+  <!-- se utiliza una tubería (async) para suscribirse al observable channelPayment$ del servicio commonsLibService y mostrar su valor actual en el span -->
+</div>
+<router-outlet></router-outlet>

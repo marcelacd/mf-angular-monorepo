@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 1.5em;
+  color: white;
+  position: sticky;
+  top: 0;
+
+  .home {
+    cursor: pointer;
+
+    .material-icons {
+      font-size: 2em;
+    }
+  }
+  .cart {
+    position: relative;
+    cursor: pointer;
+
+    .material-icons {
+      font-size: 2em;
+      margin-left: -2em;
+    }
+
+    &__count {
+      position: absolute;
+      background: red;
+      color: white;
+      padding: 5px;
+      border-radius: 50%;
+      font-weight: bold;
+      top: -8px;
+      width: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

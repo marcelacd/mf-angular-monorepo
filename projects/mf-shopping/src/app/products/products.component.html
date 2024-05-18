@@ -1,0 +1,14 @@
+<div class="app">
+  <h1>Lista de Productos</h1>
+
+  <div class="loader" *ngIf="!products?.length">
+    <span></span>
+  </div>
+
+  <div class="container">
+    <app-product-card
+      *ngFor="let product of products"
+      [product]="product"
+    ></app-product-card>
+  </div>
+</div>

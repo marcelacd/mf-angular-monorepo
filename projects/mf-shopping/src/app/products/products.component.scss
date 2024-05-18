@@ -1,0 +1,36 @@
+.app {
+  padding: 1em;
+  margin: 5px;
+  border: 3px dashed green;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  // row-gap: 1em;
+  gap: 10px;
+  padding: 1em;
+}
+
+.loader {
+  text-align: center;
+
+  span {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-bottom-color: #395b9f;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
